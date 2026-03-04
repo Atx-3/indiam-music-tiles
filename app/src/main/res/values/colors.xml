@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Palette - Sage/Olive from Figma -->
+    <color name="primary">#A3A771</color>
+    <color name="primary_dark">#8B8F5E</color>
+    <color name="primary_light">#C5C99A</color>
+
+    <!-- Background -->
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="bg_medium">#16213E</color>
+    <color name="bg_card">#0F3460</color>
+
+    <!-- Accent -->
+    <color name="accent_gold">#F5C842</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_purple">#7B2FF7</color>
+    <color name="accent_blue">#2196F3</color>
+
+    <!-- Text -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_light">#E0E0E0</color>
+    <color name="text_muted">#9E9E9E</color>
+
+    <!-- Game -->
+    <color name="tile_black">#1A1A1A</color>
+    <color name="tile_hold">#7B2FF7</color>
+    <color name="tile_hit_glow">#F5C842</color>
+    <color name="lane_divider">#3A3A5C</color>
+    <color name="game_bg">#0D0D1A</color>
+
+    <!-- UI -->
+    <color name="btn_play">#4CAF50</color>
+    <color name="btn_retry">#FF9800</color>
+    <color name="transparent_overlay">#AA000000</color>
+
+    <!-- Stars -->
+    <color name="star_filled">#FFD700</color>
+    <color name="star_empty">#555555</color>
+</resources>
