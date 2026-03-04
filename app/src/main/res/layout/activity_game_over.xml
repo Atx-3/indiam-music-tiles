@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Result Title -->
+        <TextView
+            android:id="@+id/resultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete"
+            android:textSize="36sp"
+            android:textColor="@color/accent_gold"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- Stars -->
+        <LinearLayout
+            android:id="@+id/starsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★"
+                android:textSize="48sp"
+                android:textColor="@color/star_empty"
+                android:layout_marginHorizontal="8dp" />
+
+            <TextView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★"
+                android:textSize="56sp"
+                android:textColor="@color/star_empty"
+                android:layout_marginHorizontal="8dp" />
+
+            <TextView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★"
+                android:textSize="48sp"
+                android:textColor="@color/star_empty"
+                android:layout_marginHorizontal="8dp" />
+        </LinearLayout>
+
+        <!-- Song Info -->
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_muted"
+            android:layout_marginTop="4dp" />
+
+        <!-- Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_label"
+            android:textSize="14sp"
+            android:textColor="@color/text_muted"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.1" />
+
+        <TextView
+            android:id="@+id/finalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="48sp"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Max Combo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_combo_label"
+            android:textSize="12sp"
+            android:textColor="@color/text_muted"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/maxCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:textColor="@color/accent_gold"
+            android:textStyle="bold" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+            <!-- Home -->
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/circle_button_bg"
+                android:src="@android:drawable/ic_menu_revert"
+                android:tint="@color/text_white"
+                android:contentDescription="@string/back_to_menu"
+                android:layout_marginHorizontal="12dp" />
+
+            <!-- Retry -->
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:text="@string/retry"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/btn_retry_bg"
+                android:paddingHorizontal="40dp"
+                android:layout_marginHorizontal="12dp" />
+
+            <!-- Share -->
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/btn_share_bg"
+                android:src="@android:drawable/ic_menu_share"
+                android:tint="@color/text_white"
+                android:contentDescription="@string/share_score"
+                android:layout_marginHorizontal="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

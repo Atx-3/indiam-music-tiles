@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Title Area -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎵"
+                android:textSize="64sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INDIAN"
+                android:textSize="42sp"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUSIC TILES"
+                android:textSize="28sp"
+                android:textColor="@color/accent_gold"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Play Button -->
+        <Button
+            android:id="@+id/btnPlay"
+            style="@style/PlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp" />
+
+        <!-- Recently Played -->
+        <Button
+            android:id="@+id/btnRecentlyPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recently_played"
+            android:textColor="@color/text_light"
+            android:textSize="14sp"
+            android:background="@android:color/transparent"
+            android:textAllCaps="true"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+    <!-- Settings Icon -->
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:contentDescription="@string/settings"
+        android:tint="@color/text_light" />
+
+</FrameLayout>
